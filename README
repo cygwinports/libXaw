@@ -1,0 +1,164 @@
+libXaw
+------------------------------------------
+Xorg Athena Widgets library
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  libX11_6-1.0.0-2
+  libXext6-1.0.0-1
+  libXmu6-1.0.0-1
+  libXp6-1.0.0-1
+  libXpm4-3.5.4.2-1
+  libXt6-1.0.0-1
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.7-1.7.9-1
+  binutils-20050610-1
+  cygport-0.1.0-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.20-2
+  make-3.80-1
+  pkg-config-0.20-1
+  sed-4.1.4-1
+  xextproto-7.0.2-1
+  xorg-util-macros-1.0.1-1
+  xproto-7.0.4-1
+
+Canonical website:
+  http://xorg.freedesktop.org/
+
+Canonical download:
+  http://ftp.x.org/pub/X11R7.0/src/everything/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libXaw-1.0.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libXaw-1.0.1-X.cygport all
+
+This will create:
+  /usr/src/libXaw-1.0.1-X-src.tar.bz2
+  /usr/src/libXaw-1.0.1-X.tar.bz2
+  /usr/src/libXaw6-1.0.1-X.tar.bz2
+  /usr/src/libXaw7-1.0.1-X.tar.bz2
+  /usr/src/libXaw8-1.0.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the main package:
+
+  /usr/include/X11/Xaw/AllWidgets.h
+  /usr/include/X11/Xaw/AsciiSink.h
+  /usr/include/X11/Xaw/AsciiSinkP.h
+  /usr/include/X11/Xaw/AsciiSrc.h
+  /usr/include/X11/Xaw/AsciiSrcP.h
+  /usr/include/X11/Xaw/AsciiText.h
+  /usr/include/X11/Xaw/AsciiTextP.h
+  /usr/include/X11/Xaw/Box.h
+  /usr/include/X11/Xaw/BoxP.h
+  /usr/include/X11/Xaw/Cardinals.h
+  /usr/include/X11/Xaw/Command.h
+  /usr/include/X11/Xaw/CommandP.h
+  /usr/include/X11/Xaw/Dialog.h
+  /usr/include/X11/Xaw/DialogP.h
+  /usr/include/X11/Xaw/Form.h
+  /usr/include/X11/Xaw/FormP.h
+  /usr/include/X11/Xaw/Grip.h
+  /usr/include/X11/Xaw/GripP.h
+  /usr/include/X11/Xaw/Label.h
+  /usr/include/X11/Xaw/LabelP.h
+  /usr/include/X11/Xaw/List.h
+  /usr/include/X11/Xaw/ListP.h
+  /usr/include/X11/Xaw/MenuButtoP.h
+  /usr/include/X11/Xaw/MenuButton.h
+  /usr/include/X11/Xaw/MultiSink.h
+  /usr/include/X11/Xaw/MultiSinkP.h
+  /usr/include/X11/Xaw/MultiSrc.h
+  /usr/include/X11/Xaw/MultiSrcP.h
+  /usr/include/X11/Xaw/Paned.h
+  /usr/include/X11/Xaw/PanedP.h
+  /usr/include/X11/Xaw/Panner.h
+  /usr/include/X11/Xaw/PannerP.h
+  /usr/include/X11/Xaw/Porthole.h
+  /usr/include/X11/Xaw/PortholeP.h
+  /usr/include/X11/Xaw/Print.h
+  /usr/include/X11/Xaw/PrintSP.h
+  /usr/include/X11/Xaw/Repeater.h
+  /usr/include/X11/Xaw/RepeaterP.h
+  /usr/include/X11/Xaw/Reports.h
+  /usr/include/X11/Xaw/Scrollbar.h
+  /usr/include/X11/Xaw/ScrollbarP.h
+  /usr/include/X11/Xaw/Simple.h
+  /usr/include/X11/Xaw/SimpleMenP.h
+  /usr/include/X11/Xaw/SimpleMenu.h
+  /usr/include/X11/Xaw/SimpleP.h
+  /usr/include/X11/Xaw/Sme.h
+  /usr/include/X11/Xaw/SmeBSB.h
+  /usr/include/X11/Xaw/SmeBSBP.h
+  /usr/include/X11/Xaw/SmeLine.h
+  /usr/include/X11/Xaw/SmeLineP.h
+  /usr/include/X11/Xaw/SmeP.h
+  /usr/include/X11/Xaw/StripCharP.h
+  /usr/include/X11/Xaw/StripChart.h
+  /usr/include/X11/Xaw/Template.c
+  /usr/include/X11/Xaw/Template.h
+  /usr/include/X11/Xaw/TemplateP.h
+  /usr/include/X11/Xaw/Text.h
+  /usr/include/X11/Xaw/TextP.h
+  /usr/include/X11/Xaw/TextSink.h
+  /usr/include/X11/Xaw/TextSinkP.h
+  /usr/include/X11/Xaw/TextSrc.h
+  /usr/include/X11/Xaw/TextSrcP.h
+  /usr/include/X11/Xaw/Tip.h
+  /usr/include/X11/Xaw/TipP.h
+  /usr/include/X11/Xaw/Toggle.h
+  /usr/include/X11/Xaw/ToggleP.h
+  /usr/include/X11/Xaw/Tree.h
+  /usr/include/X11/Xaw/TreeP.h
+  /usr/include/X11/Xaw/VendorEP.h
+  /usr/include/X11/Xaw/Viewport.h
+  /usr/include/X11/Xaw/ViewportP.h
+  /usr/include/X11/Xaw/XawImP.h
+  /usr/include/X11/Xaw/XawInit.h
+  /usr/lib/libXaw6.dll.a
+  /usr/lib/libXaw6.la
+  /usr/lib/libXaw7.dll.a
+  /usr/lib/libXaw7.la
+  /usr/lib/libXaw8.dll.a
+  /usr/lib/libXaw8.la
+  /usr/lib/pkgconfig/xaw6.pc
+  /usr/lib/pkgconfig/xaw7.pc
+  /usr/lib/pkgconfig/xaw8.pc
+  /usr/share/aclocal/xaw.m4
+  /usr/share/doc/Cygwin/libXaw-1.0.1.README
+  /usr/share/doc/libXaw-1.0.1/COPYING
+  /usr/share/doc/libXaw-1.0.1/ChangeLog
+  /usr/share/doc/libXaw-1.0.1/INSTALL
+  /usr/share/doc/libXaw-1.0.1/README
+  /usr/share/man/man3/Xaw.3.gz
+
+Files included in the runtime library packages:
+
+  /usr/bin/cygXaw-6.dll
+
+  /usr/bin/cygXaw-7.dll
+
+  /usr/bin/cygXaw-8.dll
+
+------------------
+
+Port Notes:
+
+----- version 1.0.1-1 -----
+Initial Cygwin release of modular X11R7.0.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
