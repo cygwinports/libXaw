@@ -1,4 +1,3 @@
 category: X11
-requires: cygwin libX11 libXext libXmu libXp libXpm libXt xproto
-sdesc: "Xorg Athena Widgets library (development)"
+sdesc: "Xorg Athena Widgets library (documentation)"
 ldesc: "Xorg Athena Widgets library"
