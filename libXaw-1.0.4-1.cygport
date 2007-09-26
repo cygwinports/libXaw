@@ -1,0 +1,16 @@
+inherit xorg
+
+PKG_NAMES="${PN} ${PN}6 ${PN}7 ${PN}8 ${PN}-devel"
+PKG_HINTS="setup rt6 rt7 rt8 devel"
+PKG_CONTENTS[0]='usr/share/doc/ usr/share/man/'
+PKG_CONTENTS[1]='usr/bin/cygXaw-6.dll'
+PKG_CONTENTS[2]='usr/bin/cygXaw-7.dll'
+PKG_CONTENTS[3]='usr/bin/cygXaw-8.dll'
+PKG_CONTENTS[4]='usr/include/ usr/lib/ usr/share/aclocal/'
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	dosym libXaw8.dll.a /usr/lib/libXaw.dll.a
+}
