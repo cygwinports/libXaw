@@ -1,0 +1,33 @@
+--- origsrc/libXaw-1.0.4/configure.ac	2007-08-21 15:18:48.000000000 -0500
++++ src/libXaw-1.0.4/configure.ac	2008-10-26 01:01:24.069337100 -0500
+@@ -22,21 +22,17 @@
+ #
+ # fix libtool to set SONAME to libXaw.so.$major
+ #
+-AC_MSG_CHECKING([hacks in libtool for libXaw SONAME])
+-if grep "xorglibxawname" libtool > /dev/null ; then
+-	AC_MSG_RESULT([already done])
+-else
+-	ed libtool << \EOF
+-/^soname_spec/i
+-# X.Org hack to match monolithic Xaw SONAME
++AC_PROG_SED
++AC_CONFIG_COMMANDS([libtool_hack], [
++	cp -f libtool libtool_
++	$SED '1,/^soname_spec/{
++ /^soname_spec/i\
++# X.Org hack to match monolithic Xaw SONAME\
+ xorglibxawname="libXaw"
+-.
+ /^soname_spec/s/libname/xorglibxawname/
+-w
+-q
+-EOF
+-	AC_MSG_RESULT([fixed])
+-fi
++}' libtool_ > libtool
++	rm -f libtool_
++])
+ 
+ # Win32 DLL rules are different.
+ case $host_os in

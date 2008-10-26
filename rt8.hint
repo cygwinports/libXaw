@@ -1,5 +1,0 @@
-category: X11
-requires: cygwin libX11_6 libXext6 libXmu6 libXp6 libXpm4 libXt6
-external-source: libXaw
-sdesc: "Xorg Athena Widgets library (API 8 runtime)"
-ldesc: "Xorg Athena Widgets library"
