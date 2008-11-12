@@ -5,9 +5,7 @@ PKG_HINTS="setup rt6 rt7 devel"
 libXaw_CONTENTS=	# empty
 libXaw6_CONTENTS='usr/bin/cygXaw-6.dll'
 libXaw7_CONTENTS='usr/bin/cygXaw-7.dll usr/share/doc/'
-libXaw_devel_CONTENTS='usr/include/ usr/lib/ usr/share/aclocal/ usr/share/man/'
-
-CYGCONF_ARGS="--disable-xaw8"
+libXaw_devel_CONTENTS='usr/include/ usr/lib/ usr/share/man/'
 
 src_install() {
 	cd ${B}

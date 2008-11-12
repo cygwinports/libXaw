@@ -35,18 +35,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libXaw-1.0.4-X-src.tar.bz2
+  unpack libXaw-1.0.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libXaw-1.0.4-X.cygport all
+  cygport ./libXaw-1.0.5-X.cygport all
 
 This will create:
-  /usr/src/libXaw-1.0.4-X-src.tar.bz2
-  /usr/src/libXaw-1.0.4-X.tar.bz2
-  /usr/src/libXaw-devel-1.0.4-X.tar.bz2
-  /usr/src/libXaw6-1.0.4-X.tar.bz2
-  /usr/src/libXaw7-1.0.4-X.tar.bz2
+  /usr/src/libXaw-1.0.5-X-src.tar.bz2
+  /usr/src/libXaw-1.0.5-X.tar.bz2
+  /usr/src/libXaw-devel-1.0.5-X.tar.bz2
+  /usr/src/libXaw6-1.0.5-X.tar.bz2
+  /usr/src/libXaw7-1.0.5-X.tar.bz2
 
 -------------------------------------------
 
@@ -141,12 +141,14 @@ Files included in the binary packages:
   /usr/lib/libXaw7.la
   /usr/lib/pkgconfig/xaw6.pc
   /usr/lib/pkgconfig/xaw7.pc
-  /usr/share/aclocal/xaw.m4
   /usr/share/man/man3/Xaw.3.gz
 
 ------------------
 
 Port Notes:
+
+----- version 1.0.5-1 -----
+Version bump.
 
 ----- version 1.0.4-2 -----
 Removed Xaw8 due to Xprint deprecation.
