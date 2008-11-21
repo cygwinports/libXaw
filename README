@@ -13,7 +13,7 @@ Runtime requirements:
 Build requirements:
 (besides corresponding devel packages)
   autoconf2.5-2.63-1
-  automake1.10-1.10.1-1
+  automake1.10-1.10.1-2
   binutils-20080624-2
   cygport-0.4.2-1
   gawk-3.1.6-1
@@ -141,6 +141,7 @@ Files included in the binary packages:
   /usr/lib/libXaw7.la
   /usr/lib/pkgconfig/xaw6.pc
   /usr/lib/pkgconfig/xaw7.pc
+  /usr/share/aclocal/xaw.m4
   /usr/share/man/man3/Xaw.3.gz
 
 ------------------
