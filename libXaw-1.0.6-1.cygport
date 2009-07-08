@@ -6,7 +6,6 @@ PATCH_URI="1.0.5-keep-xaw_m4.patch"
 
 PKG_NAMES="${PN} ${PN}6 ${PN}7 ${PN}-devel"
 PKG_HINTS="setup rt6 rt7 devel"
-libXaw_CONTENTS=	# empty
 libXaw6_CONTENTS='usr/bin/cygXaw-6.dll'
 libXaw7_CONTENTS='usr/bin/cygXaw-7.dll usr/share/doc/'
 libXaw_devel_CONTENTS='usr/include/ usr/lib/ usr/share/aclocal/ usr/share/man/'
