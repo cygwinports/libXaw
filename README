@@ -3,29 +3,31 @@ libXaw
 X.Org Athena Widgets library
 
 Runtime requirements:
-  cygwin-1.7.0-50
-  libgcc1-4.3.2-2
-  libX11_6-1.2.1-1
-  libXext6-1.0.5-10
-  libXmu6-1.0.4-10
-  libXpm4-3.5.7-10
-  libXt6-1.0.6-1
+  cygwin-1.7.0-62
+  libgcc1-4.3.4-1
+  libX11_6-1.3-1
+  libXext6-1.1-1
+  libXmu6-1.0.5-1
+  libXpm4-3.5.8-1
+  libXt6-1.0.7-1
 
 Build requirements:
 (besides corresponding devel packages)
   autoconf2.5-2.63-10
   automake1.10-1.10.2-10
-  binutils-20080624-2
-  cygport-0.9.7-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  libtool-2.2.7a-13
+  binutils-2.19.51-1
+  cygport-0.9.10-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-1
+  ghostscript-8.63-2
+  groff-1.19.2-2
+  libtool-2.2.7a-14
   make-3.81-2
   pkg-config-0.23b-10
   sed-4.1.5-2
-  xextproto-7.0.5-1
-  xorg-util-macros-1.2.2-1
-  xproto-7.0.15-2
+  xextproto-7.1.1-1
+  xorg-util-macros-1.3.0-1
+  xproto-7.0.16-1
 
 Canonical website:
   http://xorg.freedesktop.org/
@@ -36,117 +38,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libXaw-1.0.6-X-src.tar.bz2
+  unpack libXaw-1.0.7-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libXaw-1.0.6-X.cygport all
+  cygport ./libXaw-1.0.7-X.cygport all
 
 This will create:
-  /usr/src/libXaw-1.0.6-X-src.tar.bz2
-  /usr/src/libXaw-devel-1.0.6-X.tar.bz2
-  /usr/src/libXaw6-1.0.6-X.tar.bz2
-  /usr/src/libXaw7-1.0.6-X.tar.bz2
+  /usr/src/libXaw-1.0.7-X-src.tar.bz2
+  /usr/src/libXaw-devel-1.0.7-X.tar.bz2
+  /usr/src/libXaw6-1.0.7-X.tar.bz2
+  /usr/src/libXaw7-1.0.7-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(libXaw6)
-  /usr/bin/cygXaw-6.dll
-
-(libXaw7)
-  /usr/bin/cygXaw-7.dll
-
-(libXaw-devel)
-  /usr/include/X11/Xaw/AllWidgets.h
-  /usr/include/X11/Xaw/AsciiSink.h
-  /usr/include/X11/Xaw/AsciiSinkP.h
-  /usr/include/X11/Xaw/AsciiSrc.h
-  /usr/include/X11/Xaw/AsciiSrcP.h
-  /usr/include/X11/Xaw/AsciiText.h
-  /usr/include/X11/Xaw/AsciiTextP.h
-  /usr/include/X11/Xaw/Box.h
-  /usr/include/X11/Xaw/BoxP.h
-  /usr/include/X11/Xaw/Cardinals.h
-  /usr/include/X11/Xaw/Command.h
-  /usr/include/X11/Xaw/CommandP.h
-  /usr/include/X11/Xaw/Dialog.h
-  /usr/include/X11/Xaw/DialogP.h
-  /usr/include/X11/Xaw/Form.h
-  /usr/include/X11/Xaw/FormP.h
-  /usr/include/X11/Xaw/Grip.h
-  /usr/include/X11/Xaw/GripP.h
-  /usr/include/X11/Xaw/Label.h
-  /usr/include/X11/Xaw/LabelP.h
-  /usr/include/X11/Xaw/List.h
-  /usr/include/X11/Xaw/ListP.h
-  /usr/include/X11/Xaw/MenuButtoP.h
-  /usr/include/X11/Xaw/MenuButton.h
-  /usr/include/X11/Xaw/MultiSink.h
-  /usr/include/X11/Xaw/MultiSinkP.h
-  /usr/include/X11/Xaw/MultiSrc.h
-  /usr/include/X11/Xaw/MultiSrcP.h
-  /usr/include/X11/Xaw/Paned.h
-  /usr/include/X11/Xaw/PanedP.h
-  /usr/include/X11/Xaw/Panner.h
-  /usr/include/X11/Xaw/PannerP.h
-  /usr/include/X11/Xaw/Porthole.h
-  /usr/include/X11/Xaw/PortholeP.h
-  /usr/include/X11/Xaw/Print.h
-  /usr/include/X11/Xaw/PrintSP.h
-  /usr/include/X11/Xaw/Repeater.h
-  /usr/include/X11/Xaw/RepeaterP.h
-  /usr/include/X11/Xaw/Reports.h
-  /usr/include/X11/Xaw/Scrollbar.h
-  /usr/include/X11/Xaw/ScrollbarP.h
-  /usr/include/X11/Xaw/Simple.h
-  /usr/include/X11/Xaw/SimpleMenP.h
-  /usr/include/X11/Xaw/SimpleMenu.h
-  /usr/include/X11/Xaw/SimpleP.h
-  /usr/include/X11/Xaw/Sme.h
-  /usr/include/X11/Xaw/SmeBSB.h
-  /usr/include/X11/Xaw/SmeBSBP.h
-  /usr/include/X11/Xaw/SmeLine.h
-  /usr/include/X11/Xaw/SmeLineP.h
-  /usr/include/X11/Xaw/SmeP.h
-  /usr/include/X11/Xaw/StripCharP.h
-  /usr/include/X11/Xaw/StripChart.h
-  /usr/include/X11/Xaw/Template.c
-  /usr/include/X11/Xaw/Template.h
-  /usr/include/X11/Xaw/TemplateP.h
-  /usr/include/X11/Xaw/Text.h
-  /usr/include/X11/Xaw/TextP.h
-  /usr/include/X11/Xaw/TextSink.h
-  /usr/include/X11/Xaw/TextSinkP.h
-  /usr/include/X11/Xaw/TextSrc.h
-  /usr/include/X11/Xaw/TextSrcP.h
-  /usr/include/X11/Xaw/Tip.h
-  /usr/include/X11/Xaw/TipP.h
-  /usr/include/X11/Xaw/Toggle.h
-  /usr/include/X11/Xaw/ToggleP.h
-  /usr/include/X11/Xaw/Tree.h
-  /usr/include/X11/Xaw/TreeP.h
-  /usr/include/X11/Xaw/VendorEP.h
-  /usr/include/X11/Xaw/Viewport.h
-  /usr/include/X11/Xaw/ViewportP.h
-  /usr/include/X11/Xaw/XawImP.h
-  /usr/include/X11/Xaw/XawInit.h
-  /usr/lib/libXaw.dll.a  ->  libXaw7.dll.a
-  /usr/lib/libXaw6.a
-  /usr/lib/libXaw6.dll.a
-  /usr/lib/libXaw6.la
-  /usr/lib/libXaw7.a
-  /usr/lib/libXaw7.dll.a
-  /usr/lib/libXaw7.la
-  /usr/lib/pkgconfig/xaw6.pc
-  /usr/lib/pkgconfig/xaw7.pc
-  /usr/share/aclocal/xaw.m4
-  /usr/share/man/man3/Xaw.3.gz
-
-------------------
-
 Port Notes:
+
+----- version 1.0.7-1 -----
+Version bump for X11R7.5.
 
 ----- version 1.0.6-1 -----
 Version bump.

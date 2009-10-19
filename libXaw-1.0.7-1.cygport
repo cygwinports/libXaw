@@ -1,14 +1,12 @@
 inherit xorg
 
-# required until all X.Org Xaw apps tarballs are updated from git master
-# to not use XAW_CHECK_XPRINT_SUPPORT.
-PATCH_URI="1.0.5-keep-xaw_m4.patch"
+PATCH_URI="1.0.7-ps2pdf.patch"
 
 PKG_NAMES="${PN} ${PN}6 ${PN}7 ${PN}-devel"
 PKG_HINTS="setup rt6 rt7 devel"
 libXaw6_CONTENTS='usr/bin/cygXaw-6.dll'
 libXaw7_CONTENTS='usr/bin/cygXaw-7.dll usr/share/doc/'
-libXaw_devel_CONTENTS='usr/include/ usr/lib/ usr/share/aclocal/ usr/share/man/'
+libXaw_devel_CONTENTS='usr/include/ usr/lib/ usr/share/man/'
 
 src_install() {
 	cd ${B}
