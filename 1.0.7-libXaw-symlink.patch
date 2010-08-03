@@ -1,0 +1,23 @@
+--- origsrc/libXaw-1.0.7/Makefile.am	2009-10-16 16:26:55.000000000 -0500
++++ src/libXaw-1.0.7/Makefile.am	2010-08-02 23:50:27.589877600 -0500
+@@ -32,10 +32,8 @@ EXTRA_DIST = xaw6.pc.in \
+ 	old-doc/CHANGES \
+ 	ChangeLog
+ 
+-if !PLATFORM_WIN32
+ install-exec-hook:
+ 	cd $(DESTDIR)$(libdir) && rm -f libXaw.@LIBEXT@ && ln -s $(DEFAULT_LIB) libXaw.@LIBEXT@
+-endif
+ 
+ MAINTAINERCLEANFILES=ChangeLog
+ 
+--- origsrc/libXaw-1.0.7/configure.ac	2010-08-02 23:47:05.648327200 -0500
++++ src/libXaw-1.0.7/configure.ac	2010-08-02 23:49:16.003783100 -0500
+@@ -72,6 +72,7 @@ platform_darwin=no
+ LIBEXT=so
+ case $host_os in
+     cygwin*|mingw*)
++	LIBEXT=dll.a
+ 	platform_win32=yes
+ 	;;
+     darwin*)

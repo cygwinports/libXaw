@@ -1,0 +1,12 @@
+inherit xorg
+
+PATCH_URI="1.0.7-ps2pdf.patch
+           1.0.7-libXaw-symlink.patch"
+
+PKG_NAMES="${PN} ${PN}7 ${PN}-devel" # ${PN}6
+PKG_HINTS="setup rt7 devel" # rt6
+#libXaw6_CONTENTS='usr/bin/cygXaw-6.dll'
+libXaw7_CONTENTS='usr/bin/cygXaw-7.dll usr/share/doc/'
+libXaw_devel_CONTENTS='usr/include/ usr/lib/ usr/share/man/'
+
+CYGCONF_ARGS="--disable-xaw6"

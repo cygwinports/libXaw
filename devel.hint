@@ -1,5 +1,5 @@
 category: X11
-requires: libX11-devel libXext-devel libXmu-devel libXpm-devel libXt-devel xproto libXaw6 libXaw7
+requires: libX11-devel libXext-devel libXmu-devel libXpm-devel libXt-devel xproto libXaw7
 external-source: libXaw
 sdesc: "X.Org Athena Widgets library (development)"
 ldesc: "X.Org Athena Widgets library"
