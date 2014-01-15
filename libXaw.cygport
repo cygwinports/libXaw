@@ -1,13 +1,13 @@
 inherit xorg
 
 NAME="libXaw"
-VERSION=1.0.11
+VERSION=1.0.12
 RELEASE=1
-CATEGORY="X11"
+CATEGORY="Libs"
 SUMMARY="X.Org Athena Widgets library"
-DESCRIPTION="X.Org Athena Widgets library"
+DESCRIPTION="Xaw is a widget set based on the X Toolkit Intrinsics (Xt) library."
 
-PKG_NAMES="${PN}7 ${PN}-devel"
+PKG_NAMES="${NAME}7 ${NAME}-devel"
 libXaw7_CONTENTS='usr/bin/cygXaw-7.dll usr/share/doc/'
 libXaw_devel_CONTENTS='usr/include/ usr/lib/ usr/share/man/'
 
