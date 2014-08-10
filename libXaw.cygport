@@ -2,7 +2,7 @@ inherit xorg
 
 NAME="libXaw"
 VERSION=1.0.12
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="X.Org Athena Widgets library"
 DESCRIPTION="Xaw is a widget set based on the X Toolkit Intrinsics (Xt) library."
